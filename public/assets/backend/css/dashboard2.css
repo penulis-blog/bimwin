@@ -1,0 +1,1607 @@
+body{
+    background:#edf3f9;
+    overflow-x:hidden;
+}
+
+.content-wrapper{
+    background:#edf3f9;
+    min-height:calc(100vh - 57px);
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.card{
+    border:none;
+    border-radius:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.card-header{
+    border-bottom:1px solid #ececec;
+}
+
+#mapIndonesia{
+    margin:12px;
+    width:calc(100% - 24px);
+    height:480px;
+    border-radius:14px;
+}
+
+.info-box{
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.progress{
+    height:8px;
+}
+
+.small-box{
+    min-height:95px;
+    border-radius:12px;
+}
+
+.small-box h3{
+    font-size:34px;
+}
+
+.small-box p{
+    font-size:15px;
+}
+
+.small-box .icon{
+    font-size:55px;
+}
+
+.card-top{
+    height:260px;
+    overflow:auto;
+}
+
+/*  */
+.progress{
+    height:8px;
+    border-radius:20px;
+    background:#edf2f7;
+}
+
+.progress-bar{
+    border-radius:20px;
+}
+
+.card-header h5{
+    font-weight:600;
+}
+
+.card-body strong{
+    font-size:14px;
+}
+
+.card-body span{
+    font-size:13px;
+    font-weight:600;
+}
+
+/*  */
+.item-progress{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:18px;
+}
+
+.item-progress span:nth-child(2){
+    flex:1;
+    margin-left:12px;
+    font-weight:600;
+}
+
+.item-progress strong{
+    font-weight:700;
+}
+
+.item-progress .badge{
+    width:42px;
+    border-radius:8px;
+    padding:8px;
+}
+
+.list-item{
+    display:flex;
+    align-items:center;
+    margin-bottom:8px;
+}
+
+.list-item span{
+    width:42px;
+    height:28px;
+
+    border-radius:8px;
+
+    color:#fff;
+    font-size: 15px;
+    font-weight:700;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.list-item label{
+    flex:1;
+    margin-left:15px;
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight:600;
+}
+
+.list-item strong{
+    font-weight:700;
+}
+
+.bg1 span{background:#1F5B54;}
+.bg2 span{background:#98E85D;color:#222;}
+.bg3 span{background:#EDF4EA;color:#444;}
+.bg4 span{background:#D9D9D9;color:#444;}
+.bg5 span{background:#8C8C8C;}
+
+/*  */
+.status-card{
+    border-radius:18px;
+    padding:14px 10px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.status-card h2{
+    margin:0;
+    font-size:34px;
+    font-weight:700;
+    line-height:1;
+}
+
+.status-card span{
+    display:block;
+    margin-top:5px;
+    font-size:14px;
+    color:#666;
+    font-weight:500;
+}
+
+.status-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+/* Warna */
+.status-danger{
+    background:#fde8e8;
+}
+.status-danger h2{
+    color:#d93025;
+}
+
+.status-warning{
+    background:#fff1dc;
+}
+.status-warning h2{
+    color:#f29900;
+}
+
+.status-success{
+    background:#dff7ea;
+}
+.status-success h2{
+    color:#1e9e67;
+}
+
+.status-info{
+    background:#dff3fb;
+}
+.status-info h2{
+    color:#1b9bd7;
+}
+
+.status-secondary{
+    background:#f3f4f6;
+}
+.status-secondary h2{
+    color:#555;
+}
+
+/* datatable */
+/* =========================
+   EMPLOYEE TABLE
+========================= */
+
+.employee-card{
+    border:1px solid #e9edf2;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+    overflow:hidden;
+}
+
+
+/* TABLE */
+
+.employee-table{
+    width:100%;
+    font-size:13px;
+    color:#252b35;
+}
+
+.employee-table thead th{
+    background:#f5f6f9;
+    color:#555d69;
+    font-weight:500;
+
+    padding:13px 12px;
+
+    border-top:0;
+    border-bottom:1px solid #e9edf2;
+
+    white-space:nowrap;
+}
+
+.employee-table tbody td{
+    padding:10px 12px;
+
+    vertical-align:middle;
+
+    border-top:1px solid #edf0f3;
+
+    white-space:nowrap;
+}
+
+
+/* HOVER */
+
+.employee-table tbody tr{
+    transition:.2s;
+}
+
+.employee-table tbody tr:hover{
+    background:#fafbfc;
+}
+
+
+/* SORT ICON */
+
+.table-sort{
+    margin-left:8px;
+    font-size:9px;
+    color:#adb5bd;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.employee-profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.employee-avatar{
+    width:32px;
+    height:32px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    flex-shrink:0;
+}
+
+.employee-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.employee-info strong{
+    color:#1f252d;
+    font-size:13px;
+    font-weight:600;
+    line-height:17px;
+}
+
+.employee-info small{
+    color:#89919c;
+    font-size:11px;
+    line-height:15px;
+}
+
+
+/* =========================
+   EMPLOYEE ID
+========================= */
+
+.employee-id{
+    color:#252b35;
+
+    text-decoration:underline;
+
+    font-weight:500;
+}
+
+.employee-id:hover{
+    color:#007bff;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-badge{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+    font-weight:500;
+
+    background:#fff;
+}
+
+
+/* ACTIVE */
+
+.status-active{
+    color:#198754;
+
+    border:1px solid #75b798;
+
+    background:#f3fbf7;
+}
+
+
+/* INACTIVE */
+
+.status-inactive{
+    color:#dc3545;
+
+    border:1px solid #e9959d;
+
+    background:#fff7f8;
+}
+
+
+/* ONBOARDING */
+
+.status-onboarding{
+    color:#b78103;
+
+    border:1px solid #dcbf6b;
+
+    background:#fffaf0;
+}
+
+
+/* =========================
+   ACTION BUTTON
+========================= */
+
+.btn-action{
+    width:34px;
+    height:34px;
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:0;
+
+    background:#fff;
+
+    color:#4f5762;
+
+    border:1px solid #e6e9ed;
+
+    border-radius:8px;
+
+    box-shadow:none;
+}
+
+.btn-action:hover{
+    background:#f5f6f8;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.employee-table input[type="checkbox"]{
+    width:14px;
+    height:14px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   TABLE FOOTER
+========================= */
+
+.employee-table-footer{
+    min-height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:10px 12px;
+
+    border-top:1px solid #e9edf2;
+
+    background:#fff;
+}
+
+
+/* RECORD SELECT */
+
+.record-select{
+    width:110px;
+
+    border-radius:7px;
+
+    border-color:#e1e5e9;
+}
+
+
+/* =========================
+   PAGINATION
+========================= */
+
+.employee-table-footer .pagination{
+    gap:5px;
+}
+
+.employee-table-footer .page-link{
+    min-width:34px;
+    height:34px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:#4f5762;
+
+    border:1px solid #e3e6ea;
+
+    border-radius:7px !important;
+
+    background:#fff;
+
+    box-shadow:none;
+}
+
+.employee-table-footer .page-item.active .page-link{
+    color:#212529;
+
+    background:#fff;
+
+    border-color:#ced4da;
+
+    font-weight:600;
+
+    box-shadow:0 1px 4px rgba(0,0,0,.08);
+}
+
+.employee-table-footer .page-link:hover{
+    background:#f5f6f8;
+}
+
+
+/* TOTAL */
+
+.table-total{
+    color:#8b929b;
+    font-size:12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+    .employee-table{
+        min-width:1050px;
+    }
+
+    .employee-table-footer{
+        min-width:1050px;
+    }
+
+}
+
+/* pendidikan */
+/* ================================
+   EDUCATION CARD
+================================ */
+
+.education-card{
+    border:1px solid #edf0f4;
+    border-radius:14px;
+    box-shadow:0 3px 12px rgba(0,0,0,.04);
+    overflow:hidden;
+}
+
+.education-card .card-body{
+    padding:18px;
+}
+
+
+/* HEADER */
+
+.education-title{
+    display:block;
+    font-size:13px;
+    color:#6c757d;
+    margin-bottom:2px;
+}
+
+.education-total{
+    font-size:25px;
+    line-height:30px;
+    font-weight:700;
+    color:#182230;
+}
+
+.education-badge{
+    display:inline-block;
+
+    margin-left:6px;
+    padding:3px 7px;
+
+    font-size:10px;
+    font-weight:600;
+
+    color:#16a085;
+    background:#e9f8f4;
+
+    border-radius:5px;
+}
+
+
+/* ================================
+   CHART
+================================ */
+
+.education-chart-wrapper{
+    position:relative;
+
+    height:230px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-top:5px;
+}
+
+#educationChart{
+    width:100%;
+    height:230px;
+}
+
+
+/* TEXT TENGAH DONUT */
+
+.education-center{
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    pointer-events:none;
+}
+
+.education-center strong{
+    font-size:13px;
+    color:#212529;
+    font-weight:600;
+}
+
+.education-center span{
+    font-size:10px;
+    color:#9aa1aa;
+}
+
+
+/* ================================
+   LIST
+================================ */
+
+.education-list{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:8px 18px;
+
+    padding-top:12px;
+
+    border-top:1px solid #f0f1f3;
+}
+
+.education-item{
+    display:grid;
+
+    grid-template-columns:
+        10px 1fr auto;
+
+    align-items:center;
+
+    gap:7px;
+
+    font-size:12px;
+}
+
+.education-item span:nth-child(2){
+    color:#626b75;
+}
+
+.education-item strong{
+    color:#222b35;
+    font-size:12px;
+    font-weight:600;
+}
+
+
+/* DOT */
+
+.education-dot{
+    width:8px;
+    height:8px;
+
+    display:block;
+
+    border-radius:50%;
+}
+
+.edu-1{ background:#4f46e5; }
+.edu-2{ background:#6366f1; }
+.edu-3{ background:#8b5cf6; }
+.edu-4{ background:#06b6d4; }
+.edu-5{ background:#0ea5e9; }
+.edu-6{ background:#14b8a6; }
+.edu-7{ background:#84cc16; }
+.edu-8{ background:#f59e0b; }
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.education-footer{
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    margin-top:15px;
+    padding-top:12px;
+
+    border-top:1px solid #f0f1f3;
+
+    font-size:11px;
+}
+
+.education-footer span{
+    color:#9299a3;
+}
+
+.education-footer a{
+    color:#4f46e5;
+    font-weight:500;
+    text-decoration:none;
+}
+
+/*  */
+/* ==========================================
+   JARAK UTAMA DASHBOARD
+========================================== */
+
+.dashboard-wrapper{
+    display:flex;
+    align-items:flex-start;
+    width:100%;
+    gap:20px; /* jarak kiri dengan kanan */
+}
+
+
+/* ==========================================
+   AREA KIRI & KANAN
+========================================== */
+
+.dashboard-left{
+    flex:0 0 calc(75% - 10px);
+    width:calc(75% - 10px);
+    max-width:calc(75% - 10px);
+    min-width:0;
+}
+
+.dashboard-right{
+    flex:0 0 calc(25% - 10px);
+    width:calc(25% - 10px);
+    max-width:calc(25% - 10px);
+    min-width:0;
+}
+
+
+/* ==========================================
+   JARAK ANTAR KOLOM BOOTSTRAP
+========================================== */
+
+.dashboard-left > .row{
+    margin-left:-8px;
+    margin-right:-8px;
+}
+
+.dashboard-left > .row > [class*="col-"]{
+    padding-left:8px;
+    padding-right:8px;
+}
+
+
+/* ==========================================
+   JARAK STATUS CARD
+========================================== */
+
+.status-wrapper{
+    margin-bottom:16px;
+}
+
+.status-wrapper .row{
+    margin-left:-6px;
+    margin-right:-6px;
+}
+
+.status-wrapper .row > [class*="col-"]{
+    padding-left:6px;
+    padding-right:6px;
+}
+
+
+/* ==========================================
+   STATUS CARD
+========================================== */
+
+.status-card{
+    min-height:100px;
+    border-radius:14px;
+    padding:12px 8px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* ==========================================
+   GRAFIK
+========================================== */
+
+.grafik-card{
+    margin-top:0;
+    margin-bottom:16px;
+}
+
+
+/* ==========================================
+   DATATABLE
+========================================== */
+
+.dashboard-left .employee-card{
+    width:100%;
+    margin-top:0;
+    margin-bottom:16px;
+}
+
+
+/* ==========================================
+   CARD KANAN
+========================================== */
+
+.dashboard-right .layout-kanan-atas{
+    margin-bottom:16px;
+}
+
+.dashboard-right .layout-kanan-bawah{
+    margin-top:0;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:991.98px){
+
+    .dashboard-wrapper{
+        flex-direction:column;
+        gap:16px;
+    }
+
+    .dashboard-left,
+    .dashboard-right{
+        flex:0 0 100%;
+        width:100%;
+        max-width:100%;
+    }
+
+}
+
+/*--------------------------------------------- Fasilitator Multi Bimbingan  */
+/* ================================
+   FASILITATOR MULTI BIMBINGAN
+================================ */
+
+.fasilitator-multi-card{
+    border:0;
+    border-radius:14px;
+    background:#fff;
+    overflow:hidden;
+}
+
+
+/* HEADER */
+
+.education-header{
+    min-height:55px;
+    padding:15px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #eef0f3;
+}
+
+.multi-sort{
+    color:#dc3545;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+/* LIST */
+
+.multi-list{
+    padding:14px;
+    max-height:244px;
+    overflow-y:auto;
+}
+
+
+/* ITEM */
+
+.multi-item{
+    position:relative;
+
+    padding:14px;
+    margin-bottom:14px;
+
+    background:#fff;
+
+    border:1px solid #edf0f3;
+    border-radius:12px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.multi-item:last-child{
+    margin-bottom:0;
+}
+
+
+/* SCORE */
+
+.multi-score{
+    position:absolute;
+
+    top:10px;
+    right:10px;
+
+    padding:5px 8px;
+
+    border-radius:6px;
+
+    background:#c6284d;
+    color:#fff;
+
+    font-size:11px;
+    font-weight:600;
+}
+
+.multi-score i{
+    color:#ffc107;
+    margin-right:2px;
+}
+
+
+/* PROFILE */
+
+.multi-profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding-right:45px;
+}
+
+
+/* AVATAR */
+
+.multi-avatar{
+    flex:0 0 62px;
+}
+
+.multi-avatar img{
+    width:62px;
+    height:62px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+}
+
+
+/* INFO */
+
+.multi-info{
+    min-width:0;
+}
+
+.multi-info h6{
+    margin:0 0 3px 0;
+
+    font-size:14px;
+    font-weight:600;
+
+    color:#212529;
+}
+
+.multi-role{
+    display:block;
+
+    font-size:11px;
+    color:#dc5570;
+
+    margin-bottom:2px;
+}
+
+.multi-info small{
+    display:block;
+
+    font-size:10px;
+    color:#8d96a0;
+
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+/* STATISTIC */
+.multi-stat{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    row-gap:28px;
+
+    margin-top:15px;
+    padding:15px 8px 20px;
+
+    border-top:1px solid #f0f1f3;
+}
+
+.multi-stat > div{
+    position:relative;
+    text-align:center;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+/* garis pemisah */
+.multi-stat > div:not(:nth-child(3n))::after{
+    content:"";
+    position:absolute;
+
+    right:0;
+    top:0;
+
+    width:1px;
+    height:100%;
+
+    background:#dfe3e7;
+}
+
+/* LABEL */
+.multi-stat small{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+    min-height:32px;
+
+    padding:0 5px;
+
+    font-size:10px;
+    font-weight:400;
+    line-height:14px;
+
+    color:#8d96a0;
+
+    text-align:center;
+
+    /* label panjang boleh 2 baris */
+    white-space:normal;
+    overflow-wrap:normal;
+    word-break:normal;
+}
+
+/* ANGKA */
+.multi-stat strong{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:4px;
+
+    margin-top:5px;
+
+    font-size:15px;
+    font-weight:700;
+    line-height:1;
+
+    color:#000;
+
+    /* angka + panah tidak boleh terpisah */
+    white-space:nowrap;
+}
+
+.multi-stat strong i{
+    font-size:13px;
+}
+
+
+/* SCROLLBAR */
+
+.multi-list::-webkit-scrollbar{
+    width:5px;
+}
+
+.multi-list::-webkit-scrollbar-track{
+    background:#f1f3f5;
+    border-radius:10px;
+}
+
+.multi-list::-webkit-scrollbar-thumb{
+    background:#17A2B8;
+    border-radius:10px;
+}
+
+
+/* HOVER */
+
+.multi-item{
+    transition:.2s ease;
+}
+
+.multi-item:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 16px rgba(0,0,0,.08);
+}
+
+/*----------------------------------------------- JUMLAH KEGIATAN */
+
+.project-scroll-wrapper{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+
+/* =============================================
+   HORIZONTAL SCROLL
+============================================= */
+
+.project-scroll{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+
+    gap:12px;
+
+    width:100%;
+    max-width:100%;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    padding:10px;
+
+    box-sizing:border-box;
+
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+}
+
+
+/* =============================================
+   CARD
+============================================= */
+
+.project-card{
+    position:relative;
+
+    flex:0 0 220px;
+
+    width:220px;
+    min-width:220px;
+    height:155px;
+
+    padding:15px 17px;
+
+    border-radius:16px;
+
+    color:#fff;
+
+    overflow:hidden;
+
+    box-sizing:border-box;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.12);
+}
+
+
+/* DEKORASI */
+
+.project-card::before{
+    content:"";
+
+    position:absolute;
+
+    width:190px;
+    height:95px;
+
+    right:-50px;
+    top:-45px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    transform:rotate(-15deg);
+
+    pointer-events:none;
+}
+
+
+/* =============================================
+   WARNA
+============================================= */
+
+.project-blue{
+    background:#1769ff;
+}
+
+.project-dark{
+    background:#202020;
+}
+
+.project-orange{
+    background:#ff6849;
+}
+
+.project-green{
+    background:#20a47c;
+}
+
+.project-purple{
+    background:#704fe5;
+}
+
+.project-teal{
+    background:#36b9a5;
+}
+
+
+/* =============================================
+   HEADER
+============================================= */
+
+.project-top{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.project-top h5{
+    margin:0;
+
+    color:#fff;
+
+    font-size:16px;
+    font-weight:600;
+
+    line-height:1.25;
+}
+
+
+/* =============================================
+   MENU
+============================================= */
+
+.project-menu{
+    padding:0;
+
+    border:0;
+    outline:0;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    opacity:.9;
+}
+
+
+/* =============================================
+   PROGRESS INFORMATION
+============================================= */
+
+.project-progress-info{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:15px;
+
+    font-size:11px;
+}
+
+.project-progress-info strong{
+    font-size:13px;
+    font-weight:600;
+}
+
+
+/* =============================================
+   PROGRESS BAR
+============================================= */
+
+.project-progress{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+
+    gap:5px;
+
+    margin-top:6px;
+}
+
+.project-progress span{
+    flex:1;
+
+    height:5px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.30);
+}
+
+.project-progress span.active{
+    background:#fff;
+}
+
+
+/* =============================================
+   FOOTER
+============================================= */
+
+.project-footer{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:16px;
+}
+
+
+/* =============================================
+   USERS
+============================================= */
+
+.project-users{
+    display:flex;
+    align-items:center;
+}
+
+.project-users .user-circle,
+.project-users .user-more{
+    width:28px;
+    height:28px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:2px solid #fff;
+    border-radius:50%;
+
+    box-sizing:border-box;
+
+    margin-left:-6px;
+}
+
+.project-users .user-circle:first-child{
+    margin-left:0;
+}
+
+.project-users .user-circle{
+    background:#f5f5f5;
+
+    color:#555;
+
+    font-size:10px;
+}
+
+.project-users .user-more{
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    font-size:10px;
+}
+
+
+/* =============================================
+   DATE
+============================================= */
+
+.project-date{
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    font-size:11px;
+
+    white-space:nowrap;
+}
+
+.project-date i{
+    font-size:12px;
+}
+
+
+/* =============================================
+   SCROLLBAR
+============================================= */
+
+.project-scroll::-webkit-scrollbar{
+    height:6px;
+}
+
+.project-scroll::-webkit-scrollbar-track{
+    background:#edf0f4;
+
+    border-radius:20px;
+}
+
+.project-scroll::-webkit-scrollbar-thumb{
+    background:#aeb7c1;
+
+    border-radius:20px;
+}
+
+.project-scroll::-webkit-scrollbar-thumb:hover{
+    background:#8e98a4;
+}
+
+
+/* FIREFOX */
+
+.project-scroll{
+    scrollbar-width:thin;
+    scrollbar-color:#aeb7c1 #edf0f4;
+}
+
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+
+@media(max-width:768px){
+
+    .project-scroll{
+        gap:10px;
+
+        padding:10px;
+    }
+
+    .project-card{
+        flex:0 0 200px;
+
+        width:200px;
+        min-width:200px;
+
+        height:150px;
+
+        padding:14px 15px;
+    }
+
+    .project-top h5{
+        font-size:15px;
+    }
+
+    .project-progress-info{
+        margin-top:14px;
+    }
+
+    .project-footer{
+        margin-top:15px;
+    }
+}
+
+/* =============================================
+        DASHBOARD SWITCHER
+      ============================================= */
+
+      .dashboard-switcher{
+          display:flex;
+          align-items:center;
+
+          padding:4px;
+
+          background:#f3f6f9;
+
+          border:1px solid #e8edf2;
+          border-radius:10px;
+      }
+
+
+      /* ITEM */
+
+      .dashboard-switch{
+          height:34px;
+
+          display:flex;
+          align-items:center;
+          justify-content:center;
+
+          gap:7px;
+
+          padding:0 14px;
+
+          border-radius:7px;
+
+          color:#6c757d;
+
+          font-size:13px;
+          font-weight:500;
+
+          text-decoration:none;
+
+          transition:all .2s ease;
+      }
+
+
+      /* ICON */
+
+      .dashboard-switch i{
+          font-size:14px;
+      }
+
+
+      /* HOVER */
+
+      .dashboard-switch:hover{
+          background:#e9eef3;
+
+          color:#17a2b8;
+
+          text-decoration:none;
+      }
+
+
+      /* ACTIVE */
+
+      .dashboard-switch.active{
+          background:#17a2b8;
+
+          color:#fff;
+
+          box-shadow:0 2px 5px rgba(23,162,184,.20);
+      }
+
+
+      /* ACTIVE HOVER */
+
+      .dashboard-switch.active:hover{
+          background:#138496;
+
+          color:#fff;
+      }
+
+      /*  */
+      .dummy-icon{
+    width:65px;
+    height:65px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#e7f8fb;
+
+    color:#17a2b8;
+
+    font-size:30px;
+}
+
+#modalDummyData .modal-content{
+    overflow:hidden;
+}
+
+#modalDummyData .modal-body{
+    padding:35px !important;
+}
+
+#modalDummyData h4{
+    color:#212529;
+}
+
+#modalDummyData p{
+    font-size:14px;
+    line-height:1.7;
+}
