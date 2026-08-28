@@ -21,6 +21,12 @@
                     <i class="bi bi-grid"></i>
                     Dashboard V1
                 </a>
+
+                <a href="{{ url('c7575fea-63f0-4956-a95d-e4988f75bf98') }}"
+                  class="dashboard-switch {{ request()->is('c7575fea-63f0-4956-a95d-e4988f75bf98') ? 'active' : '' }}">
+                    <i class="bi bi-grid"></i>
+                    Dashboard V2
+                </a>
             </div>
         </li>
       </ul>

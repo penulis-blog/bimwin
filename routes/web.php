@@ -4,12 +4,15 @@ use App\Models\M_web;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\C_beranda;
 use App\Http\Controllers\C_blog;
+use App\Http\Controllers\C_sitemap;
 
 Route::get('/', [C_beranda::class, 'index']);
 Route::get('/sertifikat-kegiatan', [C_beranda::class, 'unduh']);
 Route::post('/sertifikat/unduh', [C_beranda::class, 'sertifikat']);
 Route::get('/sertifikat/detail/{id}', [C_beranda::class, 'list_sertifikat']);
 Route::get('/blog/{id}', [C_beranda::class, 'detail']);
+Route::get('/sitemap-keluargasakinah.xml', [C_sitemap::class, 'index']);
+
 Route::get('/blog', [C_blog::class, 'index']);
 Route::post('/blog/pencarian', [C_blog::class, 'searching']);
 Route::get('/tag/{id}', [C_blog::class, 'taging']);
